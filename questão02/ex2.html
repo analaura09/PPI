@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section>
+        <p>Somando alguns números...</p>
+    <div>
+        <p>
+            Digite aqui 10 números: <input type="number" name="snum" id="snum">
+            <br><input type="button" value="Adicionar" onclick="Adicionar()">
+            <br><select name="add" id="add" size='10'></select>
+            <br><input type="button" value="Somar" onclick="Somar">
+
+        </p>
+    </div>
+    <div id='res'></div>
+    </section>
+    <script>
+        var lista = document.getElementById('add')
+        var num = document.querySelector('input#snum')
+        var numeros = []
+        var soma = 0
+
+        
+        function Adicionar(){
+            if (numeros.length >= 10){
+                numeros.push(Number(num.value))
+                var item = document.createElement('option')
+                item.text = `${num.value} +`
+                lista.appendChild(item)
+                res.innerHTML = ''
+            }
+            
+        }
+        num.value = ''
+        num.focus()
+
+        function ParImp(n){
+
+        }
+    </script>
+</body>
+</html>
