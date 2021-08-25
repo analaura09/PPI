@@ -12,10 +12,10 @@
         <p>Somando alguns números...</p>
     <div>
         <p>
-            Digite aqui 10 números: <input type="number" name="snum" id="snum">
+            Digite um número: <input type="number" name="snum" id="snum">
             <br><input type="button" value="Adicionar" onclick="Adicionar()">
             <br><select name="add" id="add" size='10'></select>
-            <br><input type="button" value="Somar" onclick="Somar">
+            <br><input type="button" value="Somar" onclick="Somar()">
 
         </p>
     </div>
@@ -29,20 +29,25 @@
 
         
         function Adicionar(){
-            if (numeros.length >= 10){
                 numeros.push(Number(num.value))
                 var item = document.createElement('option')
                 item.text = `${num.value} +`
                 lista.appendChild(item)
                 res.innerHTML = ''
-            }
             
         }
         num.value = ''
         num.focus()
 
         function ParImp(n){
+            if (num%2==0){
 
+            }
+        }
+        function Somar(){
+            res.innerHTML=`a soma dos numeros pares dar:  `
+            res.innerHTML=`a soma dos numeros impar dar: `
+            res.innerHTML=`a soma total dar: ${num}`
         }
     </script>
 </body>
