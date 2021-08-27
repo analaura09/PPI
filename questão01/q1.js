@@ -30,4 +30,3 @@ function MedAlt(total,item){
     return total + (item.altura)/15  
 }
 console.log(`a média de alturas é de ${total.toFixed(2)}`)
-
