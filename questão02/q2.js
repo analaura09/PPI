@@ -1,11 +1,11 @@
 /*Faça um programa que receba 10 números, calcule e imprima a soma dos números ímpares e
-a soma dos números primos.*/
-1
+a soma dos números primos.(check)*/
+
 var c = 0
 var par = 0
 var imp = 0
 var pri = 0
-for(c = 1; c <= 4; c++){
+for(c = 1; c <= 10; c++){
     var num = parseInt(prompt("Digite um número:"))
 
     if (num%2 ==0){
