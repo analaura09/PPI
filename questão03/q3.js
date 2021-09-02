@@ -1,9 +1,9 @@
 /*Faça um programa que receba a idade e a opinião de 15 espectadores de um cinema em relação
 a um determinado filme, sendo ótimo - 3, bom - 2, regular -1, em seguida calcule e informe:
-a. A média das idades das pessoas que responderam ótimo;
-b. A quantidade de pessoas que responderam regular;
+a. A média das idades das pessoas que responderam ótimo;(check)
+b. A quantidade de pessoas que responderam regular;(check)
 c. A porcentagem de pessoas que responderam bom entre todos os espectadores
-analisados.
+analisados.(check)
 */
 
 var c = 0
