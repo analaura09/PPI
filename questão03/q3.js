@@ -4,7 +4,7 @@ a. A média das idades das pessoas que responderam ótimo;
 b. A quantidade de pessoas que responderam regular;
 c. A porcentagem de pessoas que responderam bom entre todos os espectadores
 analisados.
-["+c+"]*/
+*/
 
 var c = 0
 var otimo = 0
@@ -14,11 +14,13 @@ var idadeotimo = 0
 var opnregular = 0
 var opnbom = 0
 var media = 0
-for (c = 1;c <= 4;c++){
-    idade = parseInt(prompt(" Digite sua idade:"))
+for (c = 1;c <= 15;c++){
+    idade = parseInt(prompt("["+c+"] Digite sua idade:"))    
     opn = prompt("Digite aqui sua opnião sobre o filme: regular - 1, bom - 2, ótimo - 3: ")
-    if (opn < 1 || opn > 3){
+
+    while (opn < 1 || opn > 3){
         alert("Digite uma opção valida")
+        opn = prompt("Digite aqui sua opnião sobre o filme: regular - 1, bom - 2, ótimo - 3: ")
     }
     if (idade == 0){
         alert("Digite uma opção valida")
@@ -40,7 +42,7 @@ for (c = 1;c <= 4;c++){
     
 }
 media = otimo/idadeotimo
-bomporcen = (opnbom*100)/4
+bomporcen = (opnbom*100)/15
 
 console.log(`A quantidade de pessoas que responderam regular foi: ${opnregular}`)
 console.log(`A media de idade das pessoas que respoderam otimo foi ${media}`)
