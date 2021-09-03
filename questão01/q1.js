@@ -12,7 +12,7 @@ function getRandomArbitrary(min, max) {
 
 function sexoAleatorio(){
     const sexo = ['M','F']
-    sorteio = Math.floor(Math.random() * sexo.length) //aleatoriedade
+    sorteio = Math.floor(Math.random() * sexo.length)
     return  sexo[sorteio]
 }
 
@@ -51,7 +51,8 @@ for(i = 0; i < 15; i++){
         homem_mais_baixo = pessoa.altura
     }
     if (pessoa.sexo === 'M' && pessoa.altura > homens_de_170){
-        homens_de_170 = pessoa.altura
+        homens_de_170 += pessoa.altura
+        console.log(homens_de_170)
     }
     if (pessoa.sexo === 'M' && pessoa.peso > homem_mais_pesado){
         homem_mais_pesado = pessoa.peso
