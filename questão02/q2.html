@@ -5,9 +5,22 @@ a soma dos números primos.(check) -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Somando numeros</title>
 </head>
 <body>
+    <header>Somando os Números</header>
+    <section>
+        <div>
+            <p>Digite um número: <input type="number" name="num" id="num"> <input type="button" value="Adicionar" onclick="Adicionar()"></p>
+            <p><select name="add" id="add" size="10"></select></p>
+            <p><input type="button" value="Somar" onclick="Somar()"></p>
+        </div>
+        <div id="res"></div>
+    </section>
+     <footer>
+        <p>&copy; Anaverso</p>
+    </footer>
     <script src="q2.js"></script>
 </body>
 </html>
