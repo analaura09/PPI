@@ -50,13 +50,11 @@ function ePrimo(num){
     }
         
 }
-console.log(`A soma dos números primos dá: ${pri}`)
-console.log(`A soma dos numeros pares dá: ${par}`)
-console.log(`A soma dos numeros impares dá: ${imp}`)
+
 function Somar(){
-    res.innerHTML += `<p>A soma dos números primos dá:<p/>`
-    res.innerHTML += `<p>A soma dos números pares dá:<p/>`
-    res.innerHTML += `<p>A soma dos números impares dá:<p/>`
+    res.innerHTML += `<p>A soma dos números primos dá: <p/>`
+    res.innerHTML += `<p>A soma dos números pares dá: <p/>`
+    res.innerHTML += `<p>A soma dos números impares dá: <p/>`
     
 }
 
