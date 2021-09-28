@@ -5,6 +5,7 @@ var c = 0
 var par = 0
 var imp = 0
 var pri = 0
+var soma = 0
 var num = document.querySelector('input#num')
 var lista = document.querySelector('select#add')
 var res = document.querySelector('div#res')
@@ -20,6 +21,7 @@ function inlista(num, l){
 
 function Adicionar(){
     if (inlista(num.value, numeros)){
+        console.log(num)
         numeros.push(Number(num.value))
         var item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado.`
@@ -30,15 +32,20 @@ function Adicionar(){
     num.focus()
 }
 
-function ePar(num){
+for (var i = 0;i<numeros.length;i++){
+    soma += numeros[i]
+}
+console.log(soma)
+function calcular(){
     if (num%2 ==0){
         par+= num
+       
     }else{
         imp+= num
+        
     }
-}
 
-function ePrimo(num){
+
     var divisor = 0
     for (i = num; i > 0; i--){
         if (num%i == 0){
@@ -48,8 +55,9 @@ function ePrimo(num){
     if(divisor == 2){
         pri += num
     }
-        
 }
+    
+    
 
 function Somar(){
     res.innerHTML += `<p>A soma dos números primos dá: <p/>`
