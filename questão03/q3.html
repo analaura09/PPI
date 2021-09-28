@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Exercício 03</title>
 </head>
-<body>
-    <script src="q3.js"></script>
+<body>    
+    
+    <div>
+        <div>
+            <div>
+                <button type="button" onclick="gerarAleatorio()">Gerar Dados</button>
+                <button type="button" onclick="calcular()">Calcular</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div id="respostas">
+           
+            </div>
+        </div>
+
+    </div>   
+    <div>
+        <div>
+            <div >
+                <table id="minha-tabela">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Idade</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dados-tabela">
+                       
+                    </tbody>
+                </table>
+            </div>  
+        </div>
+    </div>
+    
+    <div id="exampleModal" >
+        <div>
+            <div>
+                <div>
+                    <h5  id="exampleModalLabel">Cadastro</h5>
+
+                    <button type="button"></button>
+                </div>
+                <div >
+
+                    <form>
+                        <label>Idade</label>
+                        <input type="text"  id="idade" minlength="1" maxlength="4">
+                        <div class="form-text mb-3">Insira uma idade</div>
+                
+                        <label>Nota</label>
+                        <input type="text"  id="nota">
+                        <div class="form-text mb-3">Insira uma nota</div>
+
+                        
+                    </form> 
+                </div>
+                <div >
+                    <button type="button"  onclick="checkDados()" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="q3.js"></script>  
 </body>
 </html>
