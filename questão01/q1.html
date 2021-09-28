@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Bootstrap via CDN-->
+
+    <title>Exercício 01</title>
 </head>
-<body>
-    <script src="q1.js"></script>
+<body>    
+    
+    <div >
+        <div >
+            <div class="col align-self-center text-center p-3">
+
+                
+                <button type="button" class="btn btn-danger" onclick="gerarAleatorio()">Gerar Dados</button>
+                <button type="button" class="btn btn-danger" onclick="calcular()">Calcular</button>
+            </div>
+        </div>
+    </div>
+
+    <div >
+        <div >
+            <div id="respostas" >
+           
+            </div>
+        </div>
+
+    </div>   
+    <div >
+        <div >
+            <div >
+                <table id="minha-tabela" >
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Sexo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dados-tabela">
+                        
+                    </tbody>
+                </table>
+            </div>  
+        </div>
+    </div>
+    
+    <div  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div>
+            <div>
+                <div>
+                    <h5>Cadastro</h5>
+
+                    <button type="button"></button>
+                </div>
+                <div>
+
+                    <form>
+                        <label >Altura</label>
+                        <input type="text"  id="altura" minlength="1" maxlength="4">
+                        <div >Insira uma altura</div>
+                
+                        <label >Peso</label>
+                        <input type="text"  id="peso">
+                        <div >Insira um peso</div>
+                      
+                        
+                        <label for="exampleDataList" >Sexo</label>
+                        <input  list="datalistOptions" id="exampleDataList" placeholder="Opções de sexo...">
+                        <datalist id="datalistOptions">
+                            <option value="M">
+                            <option value="F">
+                        </datalist>  
+                        <div >Insira um sexo biológico</div>       
+                    </form> 
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success"  onclick="checkDados()" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="q1.js"></script>       
 </body>
 </html>
